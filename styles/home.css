@@ -7,6 +7,7 @@ body {
     font-family: Arial;
     padding: 10px;
     background: #D6E4F0;
+    height:100vh;
 }
 
 .topnav {
@@ -67,9 +68,10 @@ body {
 
 /* Add a card effect for articles */
 .card {
-    height: 40vh;
+    height: 50vh;
     background-color: #F6F6F6;
     padding: 20px;
+    overflow: hidden;
     margin-top: 20px;
     text-overflow: hidden;
     box-shadow: 4px 8px 8px rgb(60, 60, 60);

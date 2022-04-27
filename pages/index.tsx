@@ -4,11 +4,7 @@ import Image from 'next/image'
 
 import HomeSection from '../components/Home'
 const Home: NextPage = () => {
-  return (
-    <div>
-      <HomeSection/>
-    </div>
-  )
+  return <HomeSection />
 }
 
 export default Home

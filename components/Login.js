@@ -3,9 +3,9 @@ import React from 'react'
 const Login = () => {
   return (
     <>
-      <div className="loginContainer container">
+      <div className="loginContainer mx-auto p-4 overflow-hidden ">
         <form action="/login" method="POST">
-          <h2 className="title text-center">Login Here</h2>
+          <h2 className="title text-center overflow-hidden">Login Here</h2>
 
           <input
             type="text"

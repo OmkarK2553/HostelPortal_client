@@ -4,18 +4,18 @@ import logo from '../public/logo.jpg'
 const Home = () => {
   return (
     <>
-      <div className="header">
+      <div className="header flex justify-center align-middle text-center h-full">
         <Image src={logo} id="logo"></Image>
         <h1> PUNE INSTITUTE OF COMPUTER TECHNOLOGY </h1>
         <div className="text"></div>
       </div>
 
-      <div className="row">
+      <div className="h-full">
         <div className="leftcolumn">
           <div className="card">
-            <h2>HOSTEL</h2>
+            <h2 className='overflow-hidden'>HOSTEL</h2>
             <h5></h5>
-            <p>
+            <p className='overflow-hidden'>
               The hostel dates back to 1899, after the College came into
               existence in 1854. Initially, it was started as a hostel to house
               the subordinate officers of the Poona Engineering Class &
@@ -28,8 +28,8 @@ const Home = () => {
             </p>
           </div>
           <div className="card">
-            <h2>Features</h2>
-            <p>
+            <h2 className='overflow-hidden'>Features</h2>
+            <p className='overflow-hidden'>
               The messes at Manipal Institute of Technology are run by the Chef
               on Wheels. It is one of a kind catering service that offers high
               quality & cost effective service. Our prime focus is to provide
@@ -45,8 +45,8 @@ const Home = () => {
         </div>
         <div className="rightcolumn">
           <div className="card">
-            <h2>MESS</h2>
-            <p>
+            <h2 className='overflow-hidden'>MESS</h2>
+            <p className='overflow-hidden'>
               The messes at Manipal Institute of Technology are run by the Chef
               on Wheels. It is one of a kind catering service that offers high
               quality & cost effective service. Our prime focus is to provide
@@ -60,8 +60,8 @@ const Home = () => {
             </p>
           </div>
           <div className="card">
-            <h2>News</h2>
-            <p>
+            <h2 className='overflow-hidden'>News</h2>
+            <p className='overflow-hidden'>
               The messes at Manipal Institute of Technology are run by the Chef
               on Wheels. It is one of a kind catering service that offers high
               quality & cost effective service. Our prime focus is to provide

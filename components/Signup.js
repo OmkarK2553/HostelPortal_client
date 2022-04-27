@@ -5,7 +5,7 @@ const Signup = () => {
     <>
       <div className=" signupContainer">
         <form action="/register" method="POST">
-          <h2 className="title text-center">Register Here</h2>
+          <h2 className="title text-center overflow-hidden">Register Here</h2>
 
           <input
             type="text"
