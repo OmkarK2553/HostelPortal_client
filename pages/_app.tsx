@@ -6,10 +6,27 @@ import '../styles/signup.css'
 import type { AppProps } from 'next/app'
 import Navbar from '../components/Navbar'
 function MyApp({ Component, pageProps }: AppProps) {
-  return(
+  return (
     <div>
-      <Navbar/>
-       <Component {...pageProps} />
+      <Navbar />
+      <Component {...pageProps} />
+      <style>
+      import 'bootstrap/dist/css/bootstrap.min.css';
+      </style>
+      <script
+        src="https://unpkg.com/react/umd/react.production.min.js"
+        crossOrigin
+      ></script>
+
+      <script
+        src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+        crossOrigin
+      ></script>
+
+      <script
+        src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+        crossorigin
+      ></script>
     </div>
   )
 }
