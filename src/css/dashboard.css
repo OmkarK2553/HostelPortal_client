@@ -1,0 +1,21 @@
+*{
+    margin-bottom: 0;
+    /* overflow: hidden; */
+}
+
+.col-sm-2 .img-circle{
+    height : 10vh;
+    width : 5vw;
+}
+
+.col-sm-10{
+    margin-bottom: 2vh;
+}
+
+.form-group .form-control{
+    margin-bottom: 2vh;
+}
+
+.tab-content .col-xs-6{
+    margin-top: 1.5vh;
+}
