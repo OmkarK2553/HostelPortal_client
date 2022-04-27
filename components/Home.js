@@ -10,7 +10,7 @@ const Home = () => {
         <div className="text"></div>
       </div>
 
-      <div className="h-full">
+      <div className="cards">
         <div className="leftcolumn">
           <div className="card">
             <h2 className='overflow-hidden'>HOSTEL</h2>
