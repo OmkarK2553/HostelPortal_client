@@ -1,5 +1,6 @@
 import React from 'react'
-// import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
+import '../css/navbar.css'
 
 const Navbar = () => {
     return (
@@ -13,23 +14,26 @@ const Navbar = () => {
                             aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
-                        <div classeName="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ml-auto mb-2 mb-lg-0 ms-auto">
                                 <li className="nav-item">
-                                    {/* <NavLink className="nav-link active" aria-current="page" href="/">Home</NavLink> */}
+                                    <NavLink className-="nav-NavLink active" aria-current="page" to="/">Home</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    {/* <NavLink className="nav-link" href="/features">Features</NavLink> */}
+                                    <NavLink className="nav-NavLink" to="/features">Features</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    {/* <NavLink className="nav-link" href="/contact">Contact us</NavLink> */}
+                                    <NavLink className="nav-NavLink" to="/contact">Contact us</NavLink>
                                 </li>
 
                                 <li className="nav-item">
-                                    {/* <NavLink className="nav-link" href="/signup">Sign Up</NavLink> */}
+                                    <NavLink className="nav-NavLink" to="/signup">Sign Up</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    {/* <NavLink className="nav-link" href="/login">Login</NavLink> */}
+                                    <NavLink className="nav-NavLink" to="/login">Login</NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink className="nav-NavLink" to="/dashboard">Dashboard</NavLink>
                                 </li>
                             </ul>
                         </div>

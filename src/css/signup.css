@@ -1,13 +1,14 @@
-body{
+body {
     /* background-color: #12141D; */
-    background-image: url(../img/IMG-3244.JPG);
+    /* background-image: url(../img/IMG-3244.JPG); */
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
-.signupContainer{
+
+.signupContainer {
     margin-top: 10vh;
-    margin-bottom : 10vh;
+    margin-bottom: 10vh;
     width: 30%;
     height: auto;
     border-radius: 2%;
@@ -16,11 +17,12 @@ body{
     backdrop-filter: blur(1px);
     background: rgba(33, 37, 41);
     box-shadow: 2px 2px 2px 2px rgb(65, 65, 66);
-    padding-right: var(--bs-gutter-x,.75rem);
-    padding-left: var(--bs-gutter-x,.75rem);
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
     margin-right: auto;
     margin-left: auto;
 }
+
 /* .container,.signupContainer {
     height: auto;
     width: 40%;
@@ -30,53 +32,53 @@ body{
     margin-left: auto;
 } */
 
-.title{
+.title {
     /* margin-top: 5vh; */
     padding-top: 5vh;
     color: whitesmoke;
 }
 
-.inputFields{
-    margin-top: 1vh; 
-    margin-bottom: 1vh; 
+.inputFields {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
     width: 100%;
     border: 2px solid whitesmoke;
     padding: 0.5vh;
     border-radius: 4px;
 }
 
-#username{
-    margin-top: 5vh;
+#username {
+    margin-top: 3vh;
 }
 
-#signupBtn{
+#signupBtn {
     margin-top: 2vh;
     margin-bottom: 2vh;
     width: 100%;
 }
 
-.fields{
+.fields {
     margin-top: 4vh;
     color: whitesmoke;
 }
 
-.rememberMe{
+.rememberMe {
     margin-right: 0.5vh;
 }
 
-.forgotPwd{
+.forgotPwd {
     margin-left: 0.5vh;
     color: whitesmoke;
 }
 
-.gender{
+.gender {
     color: whitesmoke;
 }
 
-.female{
+.female {
     margin-left: 20vh;
 }
 
-.male{
+.male {
     margin-left: 10vh;
 }
