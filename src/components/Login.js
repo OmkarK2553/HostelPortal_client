@@ -4,7 +4,7 @@ import '../css/loginPage.css'
 
 const Login = () => {
 
-    const naviagte = useNavigate();
+    const navigate = useNavigate();
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -29,7 +29,7 @@ const Login = () => {
         }
         else {
             window.alert("Login Successful!")
-            Navigate('/')
+            navigate('/')
         }
     }
     return (
@@ -49,8 +49,8 @@ const Login = () => {
                     </div>
 
                     <div className='container'>
-                        <button className="btn align-items-center text-center" id="btn"
-                            type="submit" onclick={loginUser}><p id="btnText">Login</p>
+                        <button name='login' className="btn align-items-center text-center" id="btn"
+                            type="submit" onClick={loginUser}><p id="btnText">Login</p>
                             <div className="check-box">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
                                     <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />

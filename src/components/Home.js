@@ -43,22 +43,12 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="footer-basic">
-                <footer>
-                    <div className="social"><a href="#"><i className="icon ion-social-google"></i></a><a href="#"><i
-                        className="icon ion-social-instagram"></i></a><a href="#"><i
-                            className="icon ion-social-twitter"></i></a><a href="#"><i className="icon ion-social-facebook"></i></a>
-                    </div>
-                    <ul className="list-inline">
-                        <li className="list-inline-item"><a href="#">Home</a></li>
-                        <li className="list-inline-item"><a href="#">Services</a></li>
-                        <li className="list-inline-item"><a href="#">About</a></li>
-                        <li className="list-inline-item"><a href="#">Terms</a></li>
-                        <li className="list-inline-item"><a href="#">Privacy Policy</a></li>
-                    </ul>
-                    <p className="copyright">PICT Hostel © 2022</p>
-                </footer>
-            </div>
+            <footer id="sticky-footer" className="flex-shrink-0 py-4 bg-dark text-white-50">
+                <div className="container text-center">
+
+                    <small id='copyrighttext'>Copyright &copy; PICT Hostel</small>
+                </div>
+            </footer>
         </>
     )
 }
