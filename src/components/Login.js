@@ -11,8 +11,9 @@ const Login = () => {
   const loginUser = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("/login", {
+    const res = await fetch("https://hostelportalpblsem4.herokuapp.com/userlogin", {
       method: "POST",
+      mode: 'cors',
       headers: {
         "Content-Type": "application/json",
       },
@@ -21,14 +22,14 @@ const Login = () => {
         password,
       }),
     });
-
+    console.log(res);
     const data = res.json();
 
     if (res.status === 400 || !data) {
       window.alert("Invalid Credentials!");
     } else {
       window.alert("Login Successful!");
-      navigate("/");
+      navigate("/dashboard");
     }
   };
   
@@ -42,7 +43,7 @@ const Login = () => {
 
           <input
             type="text"
-            placeholder="Username"
+            placeholder="EMAIL"
             name="email"
             className="inputFields"
             id="username"

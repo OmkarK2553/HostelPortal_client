@@ -6,33 +6,33 @@ import { useNavigate } from "react-router-dom";
 const Dashboard = () => {
   const navigate = useNavigate();
 
-  const callDashboard = async () => {
-    try {
-      const res = await fetch("/dashboard", {
-        method: "GET",
-        headers: {
-          Accept: "application/json", // for cookies
-          "Content-Type": "application/json",
-        },
-        credentials: "include", // for cookies
-      });
+  // const callDashboard = async () => {
+  //   try {
+  //     const res = await fetch("/login", {
+  //       method: "GET",
+  //       headers: {
+  //         Accept: "application/json", // for cookies
+  //         "Content-Type": "application/json",
+  //       },
+  //       credentials: "include", // for cookies
+  //     });
 
-      const data = await res.json();
-      console.log(data);
+  //     const data = await res.json();
+  //     console.log(data);
 
-      if (!res.status === 200) {
-        const error = new Error(res.error);
-        throw error;
-      }
-    } catch (error) {
-      console.log(error);
-      navigate("/login");
-    }
-  };
+  //     if (!res.status === 200) {
+  //       const error = new Error(res.error);
+  //       throw error;
+  //     }
+  //   } catch (error) {
+  //     console.log(error);
+  //     navigate("/login");
+  //   }
+  // };
 
-  useEffect(() => {
-    callDashboard();
-  }, []);
+  // useEffect(() => {
+  //   callDashboard();
+  // }, []);
   return (
     <>
       <form method="GET">
