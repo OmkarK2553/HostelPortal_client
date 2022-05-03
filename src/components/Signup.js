@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import '../css/signup.css'
+import '../css/footer.css'
 
 const Signup = () => {
     const navigate = useNavigate();
@@ -89,6 +90,14 @@ const Signup = () => {
 
                 </form>
             </div>
+            <footer
+                id="sticky-footer"
+                className="flex-shrink-0 py-3 bg-dark text-white-50"
+            >
+                <div className="container text-center footerarea">
+                    <small id="copyrighttext">Copyright &copy; PICT Hostel</small>
+                </div>
+            </footer>
         </>
     )
 }

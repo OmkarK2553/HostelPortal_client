@@ -6,8 +6,12 @@
 body {
     font-family: Arial;
     padding: 10px;
-    background: #D6E4F0;
+    /* background: #D6E4F0; */
+    background: #007bff;
+    /* background: linear-gradient(to right, #0062E6, #33AEFF); */
 }
+
+
 
 .topnav {
     overflow: hidden;
@@ -54,7 +58,8 @@ body {
     float: left;
     width: 50%;
     text-align: center;
-    background-color: #D6E4F0;
+    background-color: #007bff;
+    /* background: linear-gradient(to right, #1b79b8, #519dff); */
     padding-left: 20px;
 }
 
