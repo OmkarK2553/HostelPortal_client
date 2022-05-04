@@ -52,7 +52,7 @@ body {
 }
 
 .inputFields:focus-visible {
-    color: whitesmoke;
+    color: whitesmoke !important;
 }
 
 

@@ -63,7 +63,7 @@ const Login = () => {
             required
           />
 
-          <div className="fields text-center">
+          {/* <div className="fields text-center">
             <input type="checkbox" />
             <span className="rememberMe">Remember me</span>
             <a
@@ -73,7 +73,7 @@ const Login = () => {
             >
               Forgot Password?
             </a>
-          </div>
+          </div> */}
 
           <div className="container">
             <button

@@ -7,6 +7,10 @@ import Login from './components/Login'
 import Signup from './components/Signup'
 import Dashboard from './components/Dashboard';
 import Mess from './components/Mess'
+import Contact from './components/Contact';
+// import User from '../../server/model/userSchema';
+import Users from "./components/List"
+
 
 function App() {
   return (
@@ -18,6 +22,8 @@ function App() {
         <Route exact path="/signup" element={<Signup />}></Route>
         <Route exact path="/dashboard" element={<Dashboard />}></Route>
         {/* <Route exact path="/mess" element={<Mess />}></Route> */}
+        <Route exact path="/contact" element={<Contact></Contact>}></Route>
+        {/* <Route exact path="/users" element={<Users />}></Route> */}
       </Routes>
 
     </>

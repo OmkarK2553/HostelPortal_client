@@ -4,7 +4,7 @@ import imgpath from "../img/logo.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
   // const callDashboard = async () => {
   //   try {
@@ -30,527 +30,90 @@ const Dashboard = () => {
   //   }
   // };
 
-  useEffect(() => {
-    // callDashboard();
-  }, []);
+  // useEffect(() => {
+  //   callDashboard();
+  // }, []);
   return (
     <>
-      <form method="GET">
-        <div className="row">
-          <div className="col-sm-10">
-            <h1>Student Dashboard</h1>
-          </div>
-          <div className="col-sm-2">
-            <a href="home.html" className="pull-right">
-              <img
-                title="profile image"
-                className="img-circle img-responsive"
-                src={imgpath}
-                alt=""
-              />
-            </a>
-          </div>
-        </div>
-        <div className="container bootstrap snippet">
+      <section style={{ backgroundcolor: "#eee" }}>
+        <div className="container py-5">
+
+
           <div className="row">
-            <div className="col-sm-3">
-              <div className="text-center">
-                <img
-                  src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png"
-                  className="avatar img-circle img-thumbnail"
-                  alt="avatar"
-                />
-                <h6>Upload a different photo...</h6>
-                <input
-                  type="file"
-                  className="text-center center-block file-upload"
-                />
-              </div>
-              <hr />
-              <br />
+            <div className="col-lg-4">
+              <div className="card mb-4 photo">
+                <div className="card-body text-center">
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
+                    alt="avatar"
+                    className="rounded-circle img-fluid"
+                    style={{ width: " 150px;" }}
+                  ></img>
+                  <h5 className="my-3">Test User</h5>
 
-              <ul className="list-group">
+                  <div className="d-flex justify-content-center mb-2">
 
-                <li className="list-group-item text-right">
-                  <span className="pull-left">
-                    <strong>Room</strong>
-                  </span>
-                  303
-                </li>
-                <li className="list-group-item text-right">
-                  <span className="pull-left">
-                    <strong>Year</strong>
-                  </span>
-                  SE
-                </li>
-                <li className="list-group-item text-right">
-                  <span className="pull-left">
-                    <strong>Division</strong>
-                  </span>
-                  I
-                </li>
-                <li className="list-group-item text-right">
-                  <span className="pull-left">
-                    <strong>Roll No.</strong>
-                  </span>
-                  21146
-                </li>
-              </ul>
-
-              <div className="panel panel-default">
-                <div className="panel-heading">Social Media</div>
-                <div className="panel-body">
-                  <i className="fa fa-facebook fa-2x"></i>{" "}
-                  <i className="fa fa-github fa-2x"></i>{" "}
-                  <i className="fa fa-twitter fa-2x"></i>{" "}
-                  <i className="fa fa-pinterest fa-2x"></i>{" "}
-                  <i className="fa fa-google-plus fa-2x"></i>
+                  </div>
                 </div>
               </div>
+
             </div>
-            <div className="col-sm-9">
-              <div className="tab-content">
-                <div className="tab-pane active" id="home">
-                  <hr />
-                  <form
-                    className="form"
-                    action="##"
-                    method="post"
-                    id="registrationForm"
-                  >
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="first_name">
-                          <h4>First name</h4>
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          name="first_name"
-                          id="first_name"
-                          placeholder="first name"
-                          title="enter your first name if any."
-                        />
-                      </div>
+            <div className="col-lg-8">
+              <div className="card mb-4 profile">
+                <div className="card-body">
+                  <div className="row">
+                    <div className="col-sm-3">
+                      <p className="mb-0">Full Name</p>
                     </div>
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="last_name">
-                          <h4>Last name</h4>
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          name="last_name"
-                          id="last_name"
-                          placeholder="last name"
-                          title="enter your last name if any."
-                        />
-                      </div>
+                    <div className="col-sm-9">
+                      <p className="text-muted mb-0">Johnatan Smith</p>
                     </div>
-
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="phone">
-                          <h4>Phone</h4>
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          name="phone"
-                          id="phone"
-                          placeholder="enter phone"
-                          title="enter your phone number if any."
-                        />
-                      </div>
+                  </div>
+                  <hr></hr>
+                  <div className="row">
+                    <div className="col-sm-3">
+                      <p className="mb-0">Email</p>
                     </div>
-
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="mobile">
-                          <h4>Mobile</h4>
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          name="mobile"
-                          id="mobile"
-                          placeholder="enter mobile number"
-                          title="enter your mobile number if any."
-                        />
-                      </div>
+                    <div className="col-sm-9">
+                      <p className="text-muted mb-0">example@example.com</p>
                     </div>
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="email">
-                          <h4>Email</h4>
-                        </label>
-                        <input
-                          type="email"
-                          className="form-control"
-                          name="email"
-                          id="email"
-                          placeholder="you@email.com"
-                          title="enter your email."
-                        />
-                      </div>
+                  </div>
+                  <hr></hr>
+                  <div className="row">
+                    <div className="col-sm-3">
+                      <p className="mb-0">Registration ID</p>
                     </div>
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="email">
-                          <h4>Location</h4>
-                        </label>
-                        <input
-                          type="email"
-                          className="form-control"
-                          id="location"
-                          placeholder="somewhere"
-                          title="enter a location"
-                        />
-                      </div>
+                    <div className="col-sm-9">
+                      <p className="text-muted mb-0">C2K 234-5678</p>
                     </div>
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="password">
-                          <h4>Password</h4>
-                        </label>
-                        <input
-                          type="password"
-                          className="form-control"
-                          name="password"
-                          id="password"
-                          placeholder="password"
-                          title="enter your password."
-                        />
-                      </div>
+                  </div>
+                  <hr></hr>
+                  <div className="row">
+                    <div className="col-sm-3">
+                      <p className="mb-0">Mobile</p>
                     </div>
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="password2">
-                          <h4>Verify</h4>
-                        </label>
-                        <input
-                          type="password"
-                          className="form-control"
-                          name="password2"
-                          id="password2"
-                          placeholder="password2"
-                          title="enter your password2."
-                        />
-                      </div>
+                    <div className="col-sm-9">
+                      <p className="text-muted mb-0">(098) 765-4321</p>
                     </div>
-                    <div className="form-group">
-                      <div className="col-xs-12">
-                        <br />
-                        <button
-                          className="btn btn-lg btn-success"
-                          type="submit"
-                        >
-                          <i className="glyphicon glyphicon-ok-sign"></i> Save
-                        </button>
-                        <button className="btn btn-lg" type="reset">
-                          <i className="glyphicon glyphicon-repeat"></i> Reset
-                        </button>
-                      </div>
+                  </div>
+                  <hr></hr>
+                  <div className="row">
+                    <div className="col-sm-3">
+                      <p className="mb-0">Address</p>
                     </div>
-                  </form>
-
-                  <hr />
-                </div>
-                <div className="tab-pane" id="messages">
-                  <h2></h2>
-
-                  <hr />
-                  <form
-                    className="form"
-                    action="##"
-                    method="post"
-                    id="registrationForm"
-                  >
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="first_name">
-                          <h4>First name</h4>
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          name="first_name"
-                          id="first_name"
-                          placeholder="first name"
-                          title="enter your first name if any."
-                        />
-                      </div>
+                    <div className="col-sm-9">
+                      <p className="text-muted mb-0">
+                        Bay Area, San Francisco, CA
+                      </p>
                     </div>
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="last_name">
-                          <h4>Last name</h4>
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          name="last_name"
-                          id="last_name"
-                          placeholder="last name"
-                          title="enter your last name if any."
-                        />
-                      </div>
-                    </div>
-
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="phone">
-                          <h4>Phone</h4>
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          name="phone"
-                          id="phone"
-                          placeholder="enter phone"
-                          title="enter your phone number if any."
-                        />
-                      </div>
-                    </div>
-
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="mobile">
-                          <h4>Mobile</h4>
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          name="mobile"
-                          id="mobile"
-                          placeholder="enter mobile number"
-                          title="enter your mobile number if any."
-                        />
-                      </div>
-                    </div>
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="email">
-                          <h4>Email</h4>
-                        </label>
-                        <input
-                          type="email"
-                          className="form-control"
-                          name="email"
-                          id="email"
-                          placeholder="you@email.com"
-                          title="enter your email."
-                        />
-                      </div>
-                    </div>
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="email">
-                          <h4>Address</h4>
-                        </label>
-                        <input
-                          type="email"
-                          className="form-control"
-                          id="location"
-                          placeholder="address"
-                          title="enter a location"
-                        />
-                      </div>
-                    </div>
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="password">
-                          <h4>Password</h4>
-                        </label>
-                        <input
-                          type="password"
-                          className="form-control"
-                          name="password"
-                          id="password"
-                          placeholder="password"
-                          title="enter your password."
-                        />
-                      </div>
-                    </div>
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="password2">
-                          <h4>Verify</h4>
-                        </label>
-                        <input
-                          type="password"
-                          className="form-control"
-                          name="password2"
-                          id="password2"
-                          placeholder="password2"
-                          title="enter your password2."
-                        />
-                      </div>
-                    </div>
-                    <div className="form-group">
-                      <div className="col-xs-12">
-                        <br />
-                        <button
-                          className="btn btn-lg btn-success"
-                          type="submit"
-                        >
-                          <i className="glyphicon glyphicon-ok-sign"></i> Save
-                        </button>
-                        <button className="btn btn-lg" type="reset">
-                          <i className="glyphicon glyphicon-repeat"></i> Reset
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <div className="tab-pane" id="settings">
-                  <hr />
-                  <form
-                    className="form"
-                    action="##"
-                    method="post"
-                    id="registrationForm"
-                  >
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="first_name">
-                          <h4>First name</h4>
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          name="first_name"
-                          id="first_name"
-                          placeholder="first name"
-                          title="enter your first name if any."
-                        />
-                      </div>
-                    </div>
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="last_name">
-                          <h4>Last name</h4>
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          name="last_name"
-                          id="last_name"
-                          placeholder="last name"
-                          title="enter your last name if any."
-                        />
-                      </div>
-                    </div>
-
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="phone">
-                          <h4>Phone</h4>
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          name="phone"
-                          id="phone"
-                          placeholder="enter phone"
-                          title="enter your phone number if any."
-                        />
-                      </div>
-                    </div>
-
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="mobile">
-                          <h4>Mobile</h4>
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          name="mobile"
-                          id="mobile"
-                          placeholder="enter mobile number"
-                          title="enter your mobile number if any."
-                        />
-                      </div>
-                    </div>
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="email">
-                          <h4>Email</h4>
-                        </label>
-                        <input
-                          type="email"
-                          className="form-control"
-                          name="email"
-                          id="email"
-                          placeholder="you@email.com"
-                          title="enter your email."
-                        />
-                      </div>
-                    </div>
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="email">
-                          <h4>Location</h4>
-                        </label>
-                        <input
-                          type="email"
-                          className="form-control"
-                          id="location"
-                          placeholder="somewhere"
-                          title="enter a location"
-                        />
-                      </div>
-                    </div>
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="password">
-                          <h4>Password</h4>
-                        </label>
-                        <input
-                          type="password"
-                          className="form-control"
-                          name="password"
-                          id="password"
-                          placeholder="password"
-                          title="enter your password."
-                        />
-                      </div>
-                    </div>
-                    <div className="form-group">
-                      <div className="col-xs-6">
-                        <label for="password2">
-                          <h4>Verify</h4>
-                        </label>
-                        <input
-                          type="password"
-                          className="form-control"
-                          name="password2"
-                          id="password2"
-                          placeholder="password2"
-                          title="enter your password2."
-                        />
-                      </div>
-                    </div>
-                    <div className="form-group">
-                      <div className="col-xs-12">
-                        <br />
-                        <button
-                          className="btn btn-lg btn-success pull-right"
-                          type="submit"
-                        >
-                          <i className="glyphicon glyphicon-ok-sign"></i> Save
-                        </button>
-                      </div>
-                    </div>
-                  </form>
+                  </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
-      </form>
+      </section>
     </>
   );
 };
