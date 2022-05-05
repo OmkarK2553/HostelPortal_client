@@ -47,6 +47,10 @@ body {
     border-radius: 4px;
 }
 
+.inputFields:focus-visible {
+    color: whitesmoke !important;
+}
+
 #username {
     margin-top: 3vh;
 }
@@ -60,6 +64,10 @@ body {
 .fields {
     margin-top: 4vh;
     color: whitesmoke;
+}
+
+.form-check-label {
+    color: whitesmoke !important;
 }
 
 .rememberMe {

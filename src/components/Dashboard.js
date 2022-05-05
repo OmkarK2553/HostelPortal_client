@@ -35,9 +35,9 @@ const Dashboard = () => {
   // }, []);
   return (
     <>
-      <section style={{backgroundcolor: "#eee"}}>
+      <section style={{ backgroundcolor: "#eee" }}>
         <div className="container py-5">
-        
+
 
           <div className="row">
             <div className="col-lg-4">
@@ -47,16 +47,16 @@ const Dashboard = () => {
                     src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
                     alt="avatar"
                     className="rounded-circle img-fluid"
-                    style={{width:" 150px;"}}
+                    style={{ width: " 150px;" }}
                   ></img>
                   <h5 className="my-3">Test User</h5>
-                 
+
                   <div className="d-flex justify-content-center mb-2">
-                    
+
                   </div>
                 </div>
               </div>
-              
+
             </div>
             <div className="col-lg-8">
               <div className="card mb-4 profile">
@@ -109,7 +109,6 @@ const Dashboard = () => {
                   </div>
                 </div>
               </div>
-         
             </div>
           </div>
         </div>

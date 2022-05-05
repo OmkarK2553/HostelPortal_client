@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/loginPage.css";
+import "../css/footer.css"
 
 const Login = () => {
   const navigate = useNavigate();
@@ -32,8 +33,8 @@ const Login = () => {
       navigate("/dashboard");
     }
   };
-  
-  const forgetClick = () => {};
+
+  const forgetClick = () => { };
 
   return (
     <>
@@ -43,7 +44,7 @@ const Login = () => {
 
           <input
             type="text"
-            placeholder="EMAIL"
+            placeholder="Email"
             name="email"
             className="inputFields"
             id="username"
@@ -62,7 +63,7 @@ const Login = () => {
             required
           />
 
-          <div className="fields text-center">
+          {/* <div className="fields text-center">
             <input type="checkbox" />
             <span className="rememberMe">Remember me</span>
             <a
@@ -72,7 +73,7 @@ const Login = () => {
             >
               Forgot Password?
             </a>
-          </div>
+          </div> */}
 
           <div className="container">
             <button
@@ -92,6 +93,14 @@ const Login = () => {
           </div>
         </form>
       </div>
+      <footer
+        id="sticky-footer"
+        className="flex-shrink-0 py-3 bg-dark text-white-50"
+      >
+        <div className="container text-center footerarea">
+          <small id="copyrighttext">Copyright &copy; PICT Hostel</small>
+        </div>
+      </footer>
     </>
   );
 };

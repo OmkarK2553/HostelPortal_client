@@ -2,13 +2,19 @@
   flex: 1 0 auto;
 }
 
+
 /* Other Classes for Page Styling */
 
 body {
-  /* background: #007bff;
-  background: linear-gradient(to right, #0062E6, #33AEFF); */
+  /* background: #add5ff;
+  background: linear-gradient(to right, #519dff, #1b79b8); */
+  background-color: #D6E4F0;
 }
 
 #copyrighttext {
-  margin-left: 45vh;
+  color: whitesmoke !important;
+}
+
+#sticky-footer {
+  padding-top: 5px;
 }
