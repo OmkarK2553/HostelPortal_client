@@ -2,6 +2,9 @@
     margin-bottom: 0;
     /* overflow: hidden; */
 }
+.col-sm-3{
+    top:0px;
+}
 
 .col-sm-3 {
     top: 0px;
@@ -23,17 +26,14 @@
 .tab-content .col-xs-6 {
     margin-top: 1.5vh;
 }
-
-.photo {
-    height: 50vh;
-
+.photo{
+    height:50vh;
+    
 }
-
-.profile {
-    height: 70vh;
-
+.profile{
+    height:70vh;
+   
 }
-
-.card-body {
+.card-body{
     overflow-y: hidden;
 }
