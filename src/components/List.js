@@ -31,10 +31,10 @@ const Users = () => {
     return (
         <>
 
-            <Single />
-            {/* <h1 className='text-center'>Boys Hostel</h1>
-            <div className='displayBoys' > */}
-            {/* {boys.map((boy) => {
+            {/* <Single /> */}
+            <h1 className='text-center'>Boys Hostel</h1>
+            <div className='displayBoys' >
+                {/* {boys.map((boy) => {
                     const { fullname, email, mobile, } = boy;
                     return (
                         <article className='singleBoy shadow border-0 mb-4'>
@@ -44,7 +44,7 @@ const Users = () => {
                         </article>
                     )
                 })} */}
-            {/* </div> */}
+            </div>
         </>
     )
 }

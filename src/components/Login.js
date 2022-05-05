@@ -24,17 +24,18 @@ const Login = () => {
       }),
     });
     console.log(res);
-    const data = res.json();
+    const data = await res.json();
 
     if (res.status === 400 || !data) {
       window.alert("Invalid Credentials!");
     } else {
       window.alert("Login Successful!");
+      console.log(data);
+      console.log(email, password);
+
       navigate("/dashboard");
     }
   };
-
-  const forgetClick = () => { };
 
   return (
     <>
