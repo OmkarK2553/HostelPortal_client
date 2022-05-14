@@ -19,8 +19,8 @@ const Dashboard = () => {
   const navigate = useNavigate();
   const callDashboard = async () => {
     try {
-      const res = await fetch("/login", {
-        method: "GET",
+      const res = await fetch("/userlogin", {
+        method: "POST",
         headers: {
           Accept: "application/json", // for cookies
           "Content-Type": "application/json",
@@ -42,7 +42,7 @@ const Dashboard = () => {
   };
 
   useEffect(() => {
-    callDashboard();
+    // callDashboard();
   }, []);
   return (
     <>
