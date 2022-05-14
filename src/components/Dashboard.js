@@ -2,37 +2,48 @@ import React, { useEffect } from "react";
 import "../css/dashboard.css";
 import imgpath from "../img/logo.jpg";
 import { useNavigate } from "react-router-dom";
+// import User from "../../../server/model/userSchema";
 
 const Dashboard = () => {
-  //const navigate = useNavigate();
 
-  // const callDashboard = async () => {
-  //   try {
-  //     const res = await fetch("/login", {
-  //       method: "GET",
-  //       headers: {
-  //         Accept: "application/json", // for cookies
-  //         "Content-Type": "application/json",
-  //       },
-  //       credentials: "include", // for cookies
-  //     });
+  // const fetchUser = async () => {
+  //   const res = await fetch("https://hostelportalpblsem4.herokuapp.com/userlogin");
+  //   const currentUser = await res.json();
 
-  //     const data = await res.json();
-  //     console.log(data);
+  //   console.log(currentUser);
+  // }
 
-  //     if (!res.status === 200) {
-  //       const error = new Error(res.error);
-  //       throw error;
-  //     }
-  //   } catch (error) {
-  //     console.log(error);
-  //     navigate("/login");
-  //   }
-  // };
+  // fetchUser();
 
-  // useEffect(() => {
-  //   callDashboard();
-  // }, []);
+
+  const navigate = useNavigate();
+  const callDashboard = async () => {
+    try {
+      const res = await fetch("/userlogin", {
+        method: "POST",
+        headers: {
+          Accept: "application/json", // for cookies
+          "Content-Type": "application/json",
+        },
+        credentials: "include", // for cookies
+      });
+
+      const data = await res.json();
+      console.log(data);
+
+      if (!res.status === 200) {
+        const error = new Error(res.error);
+        throw error;
+      }
+    } catch (error) {
+      console.log(error);
+      navigate("/login");
+    }
+  };
+
+  useEffect(() => {
+    // callDashboard();
+  }, []);
   return (
     <>
       <section style={{ backgroundcolor: "#eee" }}>

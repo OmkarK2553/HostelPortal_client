@@ -12,9 +12,10 @@ const Login = () => {
   const loginUser = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("https://hostelportalpblsem4.herokuapp.com/userlogin", {
+    const res = await fetch("http://localhost:5000/userlogin", {
       method: "POST",
       mode: 'cors',
+      credentials: 'same-origin',
       headers: {
         "Content-Type": "application/json",
       },
@@ -23,18 +24,19 @@ const Login = () => {
         password,
       }),
     });
-    console.log(res);
-    const data = res.json();
+    console.log('Response:', res);
+    const data = await res.json();
 
     if (res.status === 400 || !data) {
       window.alert("Invalid Credentials!");
     } else {
       window.alert("Login Successful!");
+      console.log(data);
+      console.log(email, password);
+
       navigate("/dashboard");
     }
   };
-
-  const forgetClick = () => { };
 
   return (
     <>

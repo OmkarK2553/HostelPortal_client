@@ -110,7 +110,7 @@ const Signup = () => {
             onChange={handleInput}
           />
           <div className="gender d-flex">
-            <div className="form-check male">
+            <div className="form-check male text-center">
               <input
                 className="form-check-input"
                 type="radio"
@@ -119,7 +119,7 @@ const Signup = () => {
                 id="male"
                 onChange={handleInput}
               />
-              <label className="form-check-label" htmlFor="male">
+              <label className="form-check-label text-center" htmlFor="male">
                 Male
               </label>
             </div>
