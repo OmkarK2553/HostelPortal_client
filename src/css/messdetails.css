@@ -113,6 +113,10 @@ hr {
   text-align: center;
   margin: 30px;
 }
+.snack-text{
+text-align:center;
+font-size:50px;
+}
 
 @media (max-width: 1050px) {
   .grid-container {
@@ -125,6 +129,7 @@ hr {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
 
 /* .snack-img {
   width: 100%;
