@@ -12,13 +12,17 @@ import Complaint from "./components/Complaint";
 
 // import User from '../../server/model/userSchema';
 import Users from "./components/List"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 
 function App() {
 
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+
+  useEffect(() => {
+    document.title = "PICT Hostel";
+  })
 
   return (
     <>
