@@ -7,39 +7,39 @@ const TEMPLATE_ID = "template_2aayioc";
 const USER_ID = "g8RC_NWbZIF5RPpdc";
 
 const Complaint = () => {
-     const handleOnSubmit = (e) => {
+  const handleOnSubmit = (e) => {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
       .then((result) => {
         console.log(result.text);
-       alert("Complaint sent succesfully");
+        alert("Complaint sent succesfully");
       }, (error) => {
         console.log(error.text);
-       alert("Oops something went wrong");
-        
+        alert("Oops something went wrong");
+
       });
     e.target.reset()
   };
   return (
     <section><h1>COMPLAINT FORM</h1>
 
-<div className="container">
-  <form  onSubmit={handleOnSubmit} id="cform" >
-    <label for="fname">Full Name</label>
-    <input type="text"  id="fname" name="fullname" placeholder="Your name.. "className="ip" required/>
+      <div className="container5">
+        <form onSubmit={handleOnSubmit} id="cform" >
+          <label for="fname">Full Name</label>
+          <input type="text" id="fname" name="fullname" placeholder="Your name.. " className="ip" required />
 
-    <label for="email">E-mail ID</label>
-    <input type="email" id="e-mail"  name="e-mail" placeholder="Your E-mail ID.." className="ip" required/>
+          <label for="email">E-mail ID</label>
+          <input type="email" id="e-mail" name="e-mail" placeholder="Your E-mail ID.." className="ip" required />
 
-    <label for="room_no">Room Number</label>
-    <input type="text" id="room_no"  name="room_no" placeholder="Enter your room number.." className="ip" required />
-    <label for="subject">Complaint</label>
-    <textarea id="subject"  name="subject" placeholder="Write something.." style={{height:"200px"}} className="ip" required/>
+          <label for="room_no">Room Number</label>
+          <input type="text" id="room_no" name="room_no" placeholder="Enter your room number.." className="ip" required />
+          <label for="subject">Complaint</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style={{ height: "200px" }} className="ip" required />
 
-    <input type="submit" value="Submit"/>
-  </form>
-  </div>
-</section>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
   )
 }
 

@@ -27,13 +27,12 @@ body {
     color: black;
 }
 
-input[type=text],
-input[type=email],
+.ip,
 select,
 textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid rgb(41, 40, 40);
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
@@ -44,6 +43,7 @@ textarea {
 input[type=text]::after {
     border: 1px solid rgb(9, 255, 0);
 }
+
 input[type=email]::after {
     border: 1px solid rgb(9, 255, 0);
 }
@@ -61,7 +61,7 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
-.container {
+.container5 {
     border-radius: 5px;
     background-color: #D6E4F0;
     padding: 20px;
