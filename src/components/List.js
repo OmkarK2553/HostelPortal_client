@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Single from './Single';
+import "../css/list.css";
 
 const Users = () => {
 
@@ -36,6 +37,8 @@ const Users = () => {
         }
     }
 
+    
+
 
     useEffect(() => {
         fetchBoys();
@@ -45,113 +48,70 @@ const Users = () => {
 
 
     return (
-        <>
-
-            {/* <Single /> */}
-            <section>
-                <div className="row">
-                    <div className="col">
-                        <h1 className='text-center'>Boys Hostel</h1>
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    {/* <th scope="col">Sr. No.</th> */}
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Email</th>
-                                    <th scope="col">Phone</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <div className='displayBoys' >
-                                    {boys.map((boy) => {
-                                        const { fullname, email, mobile, } = boy;
-                                        return (
-                                            // <article className='singleBoy shadow border-0 mb-4'>
-                                            //     <h4 className='name'>{fullname}</h4>
-                                            //     <p>{email}</p>
-                                            //     <p>{mobile}</p>
-                                            // </article>
-                                            <tr>
-                                                {/* <th scope="row">1</th> */}
-                                                <td>{fullname}</td>
-                                                <td>{email}</td>
-                                                <td>{mobile}</td>
-                                            </tr>
-                                        )
-                                    })}
-                                </div>
-
-
-                            </tbody>
-                        </table>
-                    </div>
-                    <div className="col">
-                        <h1 className='text-center'>Girls Hostel</h1>
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    {/* <th scope="col">Sr. No.</th> */}
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Email</th>
-                                    <th scope="col">Phone</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <div className='displayBoys' >
-                                    {girls.map((girl) => {
-                                        const { fullname, email, mobile, } = girl;
-                                        return (
-                                            // <article className='singleBoy shadow border-0 mb-4'>
-                                            //     <h4 className='name'>{fullname}</h4>
-                                            //     <p>{email}</p>
-                                            //     <p>{mobile}</p>
-                                            // </article>
-                                            <tr>
-                                                {/* <th scope="row">1</th> */}
-                                                <td>{fullname}</td>
-                                                <td>{email}</td>
-                                                <td>{mobile}</td>
-                                            </tr>
-                                        )
-                                    })}
-                                </div>
-
-
-                            </tbody>
-                        </table>
-                        {/* <div className='displayGirls' >
-                            {girls.map((girl) => {
-                                const { fullname, email, mobile, } = girl;
-                                return (
-                                    <article className='singleGirl shadow border-0 mb-4'>
-                                        <h4 className='name'>{fullname}</h4>
-                                        <p>{email}</p>
-                                        <p>{mobile}</p>
-                                    </article>
-                                )
-                            })} */}
-                    </div>
-                </div>
-
-
-
-
-                {/* <div className='displayBoys' >
-                {boys.map((boy) => {
-                    const { fullname, email, mobile, } = boy;
+      <>
+        {/* <Single /> */}
+        <section>
+        
+            <div className="column">
+              <h1 className="boyshead">Boys Hostel</h1>
+              <table>
+                <thead>
+                  <tr>
+                    {/* <th scope="col">Sr. No.</th> */}
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {boys.map((boy) => {
+                    const { fullname, email, mobile } = boy;
                     return (
-                        <article className='singleBoy shadow border-0 mb-4'>
-                            <h4 className='name'>{fullname}</h4>
-                            <p>{email}</p>
-                            <p>{mobile}</p>
-                        </article>
-                    )
-                })}
-            </div> */}
+                      <tr>
+                        {/* <th scope="row">1</th> */}
+                        <td>{fullname}</td>
+                        <td>{email}</td>
+                        <td>{mobile}</td>
+                      </tr>
+                    );
+                  })}
+                  ;
+                </tbody>
+              </table>
+            </div>
 
-            </section>
-        </>
-    )
+            <div className="column">
+              <h1 className="girlshead">Girls Hostel</h1>
+              <table >
+                <thead>
+                  <tr>
+                    {/* <th scope="col">Sr. No.</th> */}
+                    <th >Name</th>
+                    <th >Email</th>
+                    <th >Phone</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                    {girls.map((girl) => {
+                      const { fullname, email, mobile } = girl;
+                      return (
+                        <tr>
+                          {/* <th scope="row">1</th> */}
+                          <td>{fullname}</td>
+                          <td>{email}</td>
+                          <td>{mobile}</td>
+                        </tr>
+                      );
+                    })}
+                  
+                </tbody>
+              </table>
+            </div>
+          
+        </section>
+      </>
+    );
 }
 
 export default Users

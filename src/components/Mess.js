@@ -1,6 +1,6 @@
 import React from 'react'
 import '../css/messdetails.css'
-import simg from '../img/simg.jpg'
+import simg from '../img/mess.jpg'
 import wadapav from "../img/wadapav.jpg";
 import tea from "../img/tea.jpg";
 import upma from "../img/upma.jpg";
@@ -49,10 +49,12 @@ const Mess = () => {
           <div>
             <h1>PICT MESS/CANTEEN</h1>
           </div>
-          <img src={simg} alt="img-1" className="slide"></img>
+     
 
           <div className=" container">
-            <div className="img-container">
+            <img src={simg} alt="img-1" className="slide"></img>
+
+            {/* <div className="img-container">
               <div className="slide-no">1/3</div>
               <img src={simg} alt="img-1" className="slide"></img>
             </div>
@@ -63,7 +65,7 @@ const Mess = () => {
             <div className="img-container">
               <div className="slide-no">3/3</div>
               <img src={simg} alt="img-1" className="slide"></img>
-            </div>
+            </div> */}
             {/* <a className="prev" onclick={plusSlides(-1)}>&#10094;</a>
                     <a className="next" onclick={plusSlides(1)}>&#10095;</a> */}
           </div>
@@ -77,9 +79,9 @@ const Mess = () => {
               <hr />{" "}
             </center>
             <div className="menu-container">
-              <div className="lunch">Lunch</div>
+              <div className="lunch">Lunch (Time: 12-3 pm)</div>
 
-              <div className="dinner">Dinner</div>
+              <div className="dinner">Dinner (Time: 7-10pm)</div>
               <div className="vertical"></div>
             </div>
           </div>
