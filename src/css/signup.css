@@ -68,6 +68,7 @@ body {
 
 .form-check-label {
     color: whitesmoke !important;
+    margin-left: 17.5px;
 }
 
 .rememberMe {
@@ -84,9 +85,13 @@ body {
 }
 
 .female {
-    margin-left: 21vh;
+    margin-left: 15vh;
 }
 
 .male {
-    margin-left: 11vh;
+    margin-left: 7vh;
+}
+
+.form-check .form-check-input {
+    margin-left: 0px;
 }
