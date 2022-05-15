@@ -3,19 +3,21 @@ import { useNavigate } from "react-router-dom";
 import "../css/loginPage.css";
 import "../css/footer.css"
 
-const Login = () => {
+let newEmail;
+
+const Login = ({ email, setEmail, password, setPassword }) => {
   const navigate = useNavigate();
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
 
   const loginUser = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("http://localhost:5000/userlogin", {
+    const res = await fetch("https://hostelportalpblsem4.herokuapp.com/userlogin", {
       method: "POST",
       mode: 'cors',
-      credentials: 'same-origin',
+      // credentials: 'same-origin',
       headers: {
         "Content-Type": "application/json",
       },
@@ -31,9 +33,10 @@ const Login = () => {
       window.alert("Invalid Credentials!");
     } else {
       window.alert("Login Successful!");
-      console.log(data);
+      console.log('DATA', data);
       console.log(email, password);
 
+      newEmail = email;
       navigate("/dashboard");
     }
   };
@@ -107,4 +110,5 @@ const Login = () => {
   );
 };
 
+export const newemail = newEmail;
 export default Login;

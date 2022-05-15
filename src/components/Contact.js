@@ -39,6 +39,7 @@ const Contact = () => {
                                         <div className="p-4">
                                             <h6 className="mb-3">AV Sapkal</h6>
                                             <p>Hostel Incharge</p>
+                                            <p>Mobile : 9881622189</p>
                                             <div className="col-md-12 text-center">
                                             </div>
                                         </div>
@@ -64,6 +65,7 @@ const Contact = () => {
                                         <div className="p-4">
                                             <h6 className="mb-3">Sandip Diwakar</h6>
                                             <p>Warden of Boys Hostel</p>
+                                            <p>Mobile : 9689091856</p>
                                             <div className="col-md-12 text-center">
 
                                             </div>
@@ -93,6 +95,7 @@ const Contact = () => {
                                         <div className="p-4">
                                             <h6 className="mb-3">Vijay Mandhre</h6>
                                             <p>Hostel Incharge</p>
+                                            <p>Mobile : 8329591968</p>
                                             <div className="col-md-12 text-center">
 
                                             </div>
@@ -119,6 +122,7 @@ const Contact = () => {
                                         <div className="p-4">
                                             <h6 className="mb-3">Nitin Bhandare</h6>
                                             <p>Assistant Warden of Boys Hostel</p>
+                                            <p>Mobile : 9767574639</p>
                                             <div className="col-md-12 text-center">
 
 
@@ -131,6 +135,14 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+            <footer
+                id="sticky-footer"
+                className="flex-shrink-0 py-3 bg-dark text-white-50"
+            >
+                <div className="container text-center">
+                    <small id="copyrighttext">Copyright &copy; PICT Hostel</small>
+                </div>
+            </footer>
         </>
     );
 };
